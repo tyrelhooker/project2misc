@@ -1,0 +1,79 @@
+body{
+    margin:0;
+    background-color:rgb(0,0,0);
+    /* background-image:url("../images/sunrise-1756274_1920.jpg"); */
+}
+.star{
+    position:absolute;
+    width:1px;
+    height:1px;
+    background-color:white;
+}
+.intro{/*Animation, size and text color.*/
+    font-family:"Press Start 2P",cursive;
+    position:absolute;
+    top:30%;
+    left:35%;
+    z-index:1;
+    animation:intro 10s ease-out 1s;
+    color:#4682b4;
+    font-weight:400;
+    font-size:300%;
+    opacity:0;
+}
+@keyframes intro{
+    0%{
+        opacity:0;
+    }
+    20%{
+        opacity:1;
+    }
+    90%{
+        opacity:1;
+    }
+    100%{
+        opacity:0;
+    }
+}
+p{
+    color:#ff4500;
+}
+#board{/*Font Setup and board positioning*/
+    font-family: 'Press Start 2P', cursive;
+    transform:perspective(300px) rotateX(25deg);
+    transform-origin:50% 100%;
+    text-align:justify;
+    position:absolute;
+    margin-left:-9em;
+    font-weight:bold;
+    overflow:hidden;
+    font-size:350%;
+    height:50em;
+    width:18em;
+    bottom:0;
+    left:50%;
+}
+#board:after{    
+    position:absolute;
+    content:' ';
+    bottom:60%;
+    left:0;
+    right:0;
+    top:0;
+}
+#content{/*Scrolling animation and positioning.*/
+    animation:scroll 75s linear 10s;
+    position:absolute;
+    top:100%;
+}
+#title, #subtitle{
+    text-align:center;
+}
+@keyframes scroll{
+    0%{
+        top:100%;
+    }
+    100%{
+        top:-170%;
+    }
+}

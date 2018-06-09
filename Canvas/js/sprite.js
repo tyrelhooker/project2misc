@@ -1,3 +1,4 @@
+// Contains constructor for character creation in animation.js
 var Sprite = function (url, spriteSheetW, spriteSheetH, spriteSheetRows, spriteSheetCols, srcCurFrame, srcTotFrame, srcx, srcy, dx, dy, speed) {
   this.url = url;
   this.spriteSheetW = spriteSheetW;
@@ -17,14 +18,4 @@ var Sprite = function (url, spriteSheetW, spriteSheetH, spriteSheetRows, spriteS
   this.dirLeft = false;
   this.dirRight = true;
   this.speed = speed;
-  // this.pos = pos;
-//   this.size = size;
-//   this.speed = 0;
-//   this.frames = frames;
-//   this._index = 0;
-//   this.url = url;
-//   this.dir = dir || "right";
 }; 
-
-
-// module.exports = Sprite;
